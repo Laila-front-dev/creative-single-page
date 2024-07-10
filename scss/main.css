@@ -1265,11 +1265,11 @@ img {
   cursor: pointer;
 }
 .menu__toggle[aria-expanded=false] {
-  background: url("/assets/images/mobile/icon-hamburger.svg");
+  background-image: url("../assets/images/mobile/icon-hamburger.svg");
   background-repeat: no-repeat;
 }
 .menu__toggle[aria-expanded=true] {
-  background: url("/assets/images/mobile/icon-cross.svg");
+  background-image: url("../assets/images/mobile/icon-cross.svg");
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 48em) {
