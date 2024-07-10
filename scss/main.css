@@ -1357,7 +1357,7 @@ img {
 
 @media screen and (min-width: 48em) {
   .grid__template__row__2 {
-    grid-template-rows: 100px 100px 325px 1fr;
+    grid-template-rows: 140px 100px 325px 1fr;
   }
 }
 
@@ -1590,7 +1590,7 @@ footer {
 }
 @media screen and (min-width: 75em) {
   footer {
-    padding-block-start: 15.875rem;
+    padding-block-start: 20.875rem;
   }
 }
 footer :nth-child(2) {
@@ -1711,6 +1711,11 @@ p[data-type=wide] {
 @media screen and (min-width: 48em) {
   .hero__section .hero__details {
     padding-block-end: 0rem;
+  }
+}
+@media screen and (min-width: 75em) {
+  .hero__section .hero__details {
+    width: 88vh;
   }
 }
 

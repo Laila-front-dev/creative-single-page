@@ -9,5 +9,8 @@
     @include mq(medium) {
       padding-block-end: 0rem; // 3.5
     }
+    @include mq(large) {
+      width: 88vh;
+    }
   }
 }
