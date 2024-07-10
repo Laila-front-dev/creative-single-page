@@ -2,12 +2,12 @@
 @font-face {
   font-family: "Commissioner", sans-serif;
   font-weight: 800;
-  src: url("/assets/fonts/CommissionerExtraBold.woff2") format("woff2"), url("/assets/fonts/CommissionerExtraBold.woff") format("woff");
+  src: url("./assets/fonts/CommissionerExtraBold.woff2") format("woff2"), url("./assets/fonts/CommissionerExtraBold.woff") format("woff");
 }
 @font-face {
   font-family: "Commissioner", sans-serif;
   font-weight: 400;
-  src: url("/assets/fonts/CommissionerRegular.woff2") format("woff2"), url("/asset/font/CommissionerRegular.woff") format("woff");
+  src: url("./assets/fonts/CommissionerRegular.woff2") format("woff2"), url("./asset/font/CommissionerRegular.woff") format("woff");
 }
 /* ROOT */
 :root {
@@ -1357,7 +1357,7 @@ img {
 
 @media screen and (min-width: 48em) {
   .grid__template__row__2 {
-    grid-template-rows: 140px 100px 325px 1fr;
+    grid-template-rows: 160px 100px 325px 1fr;
   }
 }
 
@@ -1711,11 +1711,6 @@ p[data-type=wide] {
 @media screen and (min-width: 48em) {
   .hero__section .hero__details {
     padding-block-end: 0rem;
-  }
-}
-@media screen and (min-width: 75em) {
-  .hero__section .hero__details {
-    width: 88vh;
   }
 }
 

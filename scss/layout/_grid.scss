@@ -32,7 +32,7 @@
 
 .grid__template__row__2 {
   @include mq(medium) {
-    grid-template-rows: 140px 100px 325px 1fr;
+    grid-template-rows: 160px 100px 325px 1fr;
   }
 }
 
