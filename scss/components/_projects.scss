@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+
+.project__section {
+  .project__title {
+    padding-block: 2rem;
+    height: 272px;
+    @include mq(medium) {
+      padding-block: 9.5rem;
+      height: auto;
+    }
+  }
+}

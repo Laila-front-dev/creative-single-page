@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.about__details {
+  padding-block: 4.563rem;
+  padding-inline-start: 1rem;
+  @include mq(medium) {
+    padding-block-start: 7.5rem;
+    padding-inline-start: 4.313rem;
+  }
+  @include mq(large) {
+    padding-block-start: 12.5rem;
+    padding-inline-start: 8.813rem;
+  }
+}

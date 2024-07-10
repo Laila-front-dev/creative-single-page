@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+.menu__toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  &[aria-expanded="false"] {
+    background: url("/assets/images/mobile/icon-hamburger.svg");
+    background-repeat: no-repeat;
+  }
+  &[aria-expanded="true"] {
+    background: url("/assets/images/mobile/icon-cross.svg");
+    background-repeat: no-repeat;
+  }
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+.primary__navigation {
+  position: fixed;
+  inset: 9.9% 7% 55% 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: $color-primary-800;
+  color: $color-neutral-100;
+  transform: translateX(200%);
+  transition: transform 350ms ease-out;
+  z-index: 999;
+  &[data-visibility="true"] {
+    transform: translateX(0%);
+  }
+  @include mq(medium) {
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    top: 0;
+    height: 11.125rem;
+    transform: translateX(0%);
+  }
+}
+
+.visually__hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

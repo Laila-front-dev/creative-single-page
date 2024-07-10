@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+nav {
+  padding-block: 0px;
+  padding-inline-start: 1.5rem;
+  background-color: transparent;
+  @include mq(medium) {
+    // padding-block: 56px;
+    background-color: $color-accent-600;
+  }
+  @include mq(large) {
+    padding-inline-start: 2rem;
+  }
+  li a {
+    color: $color-neutral-100 !important;
+    font-size: $font-size-100;
+    line-height: 32px;
+    font-weight: $fw-regular;
+    text-transform: capitalize;
+  }
+}

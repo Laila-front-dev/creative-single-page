@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.button {
+  background-color: $color-accent-600;
+  color: $color-neutral-100;
+  padding: 1.438rem 2.813rem;
+  transition: background-color 350ms ease-out;
+  cursor: pointer;
+  &:hover {
+    background-color: hsl(0, 100, 79%);
+  }
+  &[data-type="primary"] {
+    @include mq(medium) {
+      background-color: $color-primary-800;
+      padding-inline: 1.188rem;
+    }
+    @include mq(large) {
+      padding-inline: 2.813rem;
+    }
+    &:hover {
+      background-color: hsl(0, 0, 59%);
+    }
+  }
+  &[data-type="secondary"] {
+    width: fit-content;
+    padding: 0.5rem 0;
+    color: $color-accent-600;
+    background-color: transparent;
+    // padding: 0;
+    border-bottom: 1px solid $color-accent-600;
+    &:hover {
+      color: hsl(0, 100, 79%);
+      border-bottom-color: hsl(0, 100, 79%);
+    }
+  }
+}

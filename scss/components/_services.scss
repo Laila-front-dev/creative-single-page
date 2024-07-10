@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+
+.services__title {
+  background-color: $color-accent-600;
+  color: $color-neutral-100;
+  padding-block-start: 4.563rem;
+  @include mq(medium) {
+    background-color: transparent;
+    color: $color-primary-900;
+    padding-block-start: 0;
+  }
+}
+
+.services__section {
+  padding-block: 6rem;
+  background-color: $color-accent-600;
+  color: $color-neutral-100;
+  padding-inline-start: 1rem;
+  @include mq(medium) {
+    padding-block-start: 7.5rem;
+  }
+  @include mq(large) {
+    padding-block: 13.5rem;
+    padding-inline-start: 13.5rem;
+  }
+
+  ul {
+    display: grid;
+    gap: 5.25rem;
+    @include mq(medium) {
+      // padding-inline-start: 3.25rem;
+    }
+    li {
+      h3 {
+        padding-inline-start: 1rem;
+        position: relative;
+        z-index: 2;
+        &::before {
+          // content: "01";
+          position: absolute;
+          font-size: 5rem;
+          font-weight: $fw-ExtraBold;
+          opacity: 0.3;
+          top: -10%;
+          left: 0;
+          transform: translateY(-50%);
+          z-index: 1;
+        }
+      }
+      &:nth-child(1) h3::before {
+        content: "01";
+      }
+
+      &:nth-child(2) h3::before {
+        content: "02";
+      }
+      &:nth-child(3) h3::before {
+        content: "03";
+      }
+      p {
+        padding-inline-start: 1rem;
+      }
+    }
+  }
+}

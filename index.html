@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Single Page</title>
+    <!-- Css File -->
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <header class="header | d__grid grid__template__columns__1">
+      <div class="header__logo grid__span padding__inline__start__10">
+        <a href="#"
+          ><img
+            src="./assets/images/desktop/logo.svg"
+            alt="creative logo"
+            style="object-fit: contain; width: auto"
+        /></a>
+      </div>
+      <nav class="grid__span__2 d__flex align__center gap__3">
+        <button
+          class="menu__toggle"
+          id="menu__toggle"
+          aria-controls="primary__navigation"
+          aria-expanded="false"
+        >
+          <span class="visually__hidden">Menu</span>
+          <div class="hamburger__menu" aria-hidden="true"></div>
+        </button>
+        <ul
+          class="d__flex gap__2 | primary__navigation"
+          id="primary__navigation"
+          data-state="closed"
+          data-visibility="false"
+        >
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">projects</a></li>
+          <button class="button" data-type="primary">Schedule a Call</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero__section | d__grid grid__template__column grid__template__columns__1 grid__template__row__2"
+      >
+        <div class="hero__details grid__span padding__inline__start__10 flow">
+          <h1 class="heading-1">Branding & website design agency</h1>
+          <p>
+            We specialize in visual storytelling by creating cohesive brand and
+            website design solutions for small businesses, giving lasting
+            impressions to audiences in a digital world.
+          </p>
+          <button class="button">Learn More</button>
+        </div>
+        <div class="grid__span__column">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/desktop/image-hero.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/tablet/image-hero.jpg"
+            />
+            <img src="./assets/images/mobile/image-hero.jpg" alt="Hero image" />
+          </picture>
+        </div>
+      </section>
+      <section
+        class="d__grid grid__template__columns__1 grid__template__row__1"
+      >
+        <div class="grid__span__1">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/desktop/image-strategic.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/tablet/image-strategic.jpg"
+            />
+            <img
+              src="./assets/images/mobile/image-strategic.jpg"
+              alt="computer image"
+            />
+          </picture>
+        </div>
+        <div
+          class="about__details | grid__span__2 flow bg-primary-800 clr-neutral-100"
+        >
+          <h2 class="heading-2">
+            <span class="clr-accent-600">Design</span> is strategic.
+          </h2>
+          <p data-type="secondary">
+            “A well-crafted design strategy consistently produces desired
+            outcomes and brand awareness. We are firm believers that success
+            lies in creative collaboration with our clients.”
+          </p>
+          <button class="button" data-type="secondary">Schedule a Call</button>
+        </div>
+        <div
+          class="services__title | padding__inline__start__10 grid__span__11"
+        >
+          <h2 class="heading-2">Our approach for creating a winning brand</h2>
+        </div>
+        <div class="services__section grid__span__3">
+          <ul>
+            <li class="flow">
+              <h3>Brand Strategy</h3>
+              <p data-type="secondary">
+                Brand strategy is critical for long-term success. Outshining
+                competitors and capturing the target audience are key.
+              </p>
+            </li>
+            <li class="flow">
+              <h3>Brand Design</h3>
+              <p data-type="secondary">
+                Keeping the brand design unique and meaningful helps in
+                communicating the brand’s value effectively.
+              </p>
+            </li>
+            <li class="flow">
+              <h3>Web Design</h3>
+              <p data-type="secondary">
+                A beautifully crafted website is the best tool for brand
+                awareness, and ultimately results in increased revenues.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="project__section | d__grid grid__template__columns__1 grid__template__row__2"
+      >
+        <div
+          class="project__title | grid__span__4 padding__inline__start__10 bg-primary-800 clr-neutral-100"
+        >
+        <div class="slider__title">
+
+          <h2 class="heading-2">Brand naming & guidelines</h2>
+          <h2 class="heading-2">Brand identity & merchandise</h2>
+          <h2 class="heading-2">Brand identity & web design</h2>
+        </div>
+          <div class="slider__controls" style="padding-block-start: 10rem; display: flex; gap: 1rem;">
+            <button class="previous" style="cursor: pointer;">
+              <img src="./assets/images/desktop/icon-arrow-previous.svg" alt="" style="max-width: 100%; width: fit-content;">
+
+            </button>
+            <button class="next" style="cursor: pointer;">
+              <img src="./assets/images/desktop/icon-arrow-next.svg" alt="" style="max-width: 100%; width: fit-content;">
+
+            </button>
+          </div>
+        </div>
+        <div class="grid__span__5">
+          <div class="slider__container">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./assets/images/desktop/image-slide-1.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/tablet/image-slide-1.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-slide-1.jpg"
+                  alt="slider image"
+                />
+              </picture>
+              <div
+              class="d__flex flex__column justify__end align__end | clr-neutral-100"
+                style="align-self: flex-end; margin-inline-end: 2rem; margin-block-end: 5rem;"
+                >
+                  <h3 class="heading-3">Lean Product Roadmap</h3>
+                  <span>2019 project</p>
+                </div>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./assets/images/desktop/image-slide-2.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/tablet/image-slide-2.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-slide-2.jpg"
+                  alt="slider image"
+                />
+              </picture>
+              <div
+              class="d__flex flex__column justify__end align__end | clr-neutral-100"
+                style="align-self: flex-end; margin-inline-end: 2rem; margin-block-end: 5rem;"
+                >
+                  <h3 class="heading-3">New Majestic Hotel</h3>
+                  <span>2018 Project</p>
+                </div>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./assets/images/desktop/image-slide-3.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/images/tablet/image-slide-3.jpg"
+                />
+                <img
+                  src="./assets/images/mobile/image-slide-3.jpg"
+                  alt="slider image"
+                />
+              </picture>
+              <div
+              class="d__flex flex__column justify__end align__end | clr-neutral-100"
+                style="align-self: flex-end; margin-inline-end: 2rem; margin-block-end: 5rem;"
+                >
+                  <h3 class="heading-3">Crypto Dashboard</h3>
+                  <span>2016 Project</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="d__grid grid__template__columns__1">
+      <div class="grid__span__6 padding__inline__start__10">
+        <h2 class="heading-2">Let's build something great together.</h2>
+      </div>
+      <div class="grid__span__7">
+        <button class="button">Schedule a Call</button>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

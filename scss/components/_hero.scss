@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.hero__section {
+  // position: relative;
+
+  .hero__details {
+    padding-block-start: 3.5rem; // 3.5
+    padding-block-end: 6rem; // 3.5
+    @include mq(medium) {
+      padding-block-end: 0rem; // 3.5
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.header {
+  padding-block: 2rem;
+  @include mq(medium) {
+    padding-block: 0rem;
+  }
+}

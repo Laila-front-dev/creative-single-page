@@ -1,0 +1,28 @@
+$-clr-black-900: hsl(0, 0%, 0%);
+$-clr-black-800: hsl(240, 14%, 11%);
+$-clr-red-600: hsl(0, 93%, 64%);
+$-clr-white-100: hsl(0, 0%, 100%);
+
+$light: (
+  "neutral": (
+    "100": $-clr-white-100,
+  ),
+  "accent": (
+    "600": $-clr-red-600,
+  ),
+  "primary": (
+    "900": $-clr-black-900,
+    "800": $-clr-black-800,
+  ),
+);
+
+$color-neutral-100: var(--neutral-100);
+
+$color-accent-600: var(--accent-600);
+
+$color-primary-900: var(--primary-900);
+$color-primary-800: var(--primary-800);
+
+$body-text-color: $color-primary-900;
+$body-bg-color: $color-neutral-100;
+//

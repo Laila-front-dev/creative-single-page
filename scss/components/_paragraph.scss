@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+p {
+  // max-width: 33ch;
+  // margin-inline: auto;
+  font-size: $font-size-200;
+  line-height: 25px;
+  font-weight: $fw-regular;
+  color: $color-primary-900;
+  max-width: 40ch;
+  @include mq(medium) {
+    max-width: 53ch;
+    // margin-inline: 0;
+  }
+  &[data-type="secondary"] {
+    color: $color-neutral-100;
+    @include mq(medium) {
+      max-width: 43ch;
+      // margin-inline: 0;
+    }
+  }
+}
+
+p[data-type="wide"] {
+  // max-width: 42ch;
+  // font-size: $font-size-200;
+  // @include mq(large) {
+  //   margin-inline: 0;
+  //   max-width: 44ch;
+  // }
+  max-width: 100%;
+}
