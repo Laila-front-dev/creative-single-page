@@ -1,25 +1,36 @@
 @use "../abstracts/" as *;
 
+// footer {
+//   position: relative;
+//   padding-block-start: 30.875rem;
+//   padding-block-end: 6.875rem;
+//   @include mq(medium) {
+//     padding-block-start: 6.875rem;
+//   }
+//   @include mq(large) {
+//     padding-block-start: 20.875rem;
+//   }
+//   :nth-child(2) {
+//     padding-block-start: 2.938rem;
+//     padding-inline-start: 1rem;
+//     @include mq(medium) {
+//       padding-block-start: 0rem;
+//       padding-inline-start: 6rem;
+//     }
+//     @include mq(large) {
+//       padding-inline-start: 10rem;
+//     }
+//   }
+// }
+
 footer {
+  // background: red;
   position: relative;
-  padding-block-start: 30.875rem;
-  padding-block-end: 6.875rem;
-  @include mq(medium) {
-    padding-block-start: 6.875rem;
-    // padding-block-end: 15.875rem;
-  }
-  @include mq(large) {
-    padding-block-start: 20.875rem;
-  }
-  :nth-child(2) {
-    padding-block-start: 2.938rem;
-    padding-inline-start: 1rem;
-    @include mq(medium) {
-      padding-block-start: 0rem;
-      padding-inline-start: 6rem;
-    }
-    @include mq(large) {
-      padding-inline-start: 10rem;
-    }
-  }
+  // bottom: 0;
+  padding-block: 100px;
 }
+
+// main {
+//   min-height: 478vh;
+//   background: yellow;
+// }

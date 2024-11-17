@@ -39,16 +39,16 @@
           data-state="closed"
           data-visibility="false"
         >
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">projects</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#projects">projects</a></li>
           <button class="button" data-type="primary">Schedule a Call</button>
         </ul>
       </nav>
     </header>
     <main>
       <section
-        class="hero__section | d__grid grid__template__column grid__template__columns__1 grid__template__row__2"
+        class="hero__section | d__grid grid__template__column grid__template__columns__1 grid__template__row__2" id="about"
       >
         <div class="hero__details grid__span padding__inline__start__10 flow">
           <h1 class="heading-1">Branding  & <br> website design agency</h1>
@@ -74,7 +74,7 @@
         </div>
       </section>
       <section
-        class="d__grid grid__template__columns__1 grid__template__row__1"
+        class="services__section d__grid grid__template__columns__1 grid__template__row__1" id="services"
       >
         <div class="grid__span__1">
           <picture>
@@ -110,7 +110,7 @@
         >
           <h2 class="heading-2">Our approach for creating a winning brand</h2>
         </div>
-        <div class="services__section grid__span__3">
+        <div class="services__details grid__span__3">
           <ul>
             <li class="flow">
               <h3>Brand Strategy</h3>
@@ -137,7 +137,7 @@
         </div>
       </section>
       <section
-        class="project__section | d__grid grid__template__columns__1 grid__template__row__2"
+        class="project__section | d__grid grid__template__columns__1 grid__template__row__2" id="projects"
       >
         <div
           class="project__title | grid__span__4 padding__inline__start__10 bg-primary-800 clr-neutral-100"
@@ -149,17 +149,15 @@
           <h2 class="heading-2">Brand identity & web design</h2>
         </div>
           <div class="slider__controls" style="padding-block-start: 10rem; display: flex; gap: 1rem;">
-            <button class="previous" style="cursor: pointer;">
-              <img src="./assets/images/desktop/icon-arrow-previous.svg" alt="" style="max-width: 100%; width: fit-content;">
+            <button class="button previous">
 
             </button>
-            <button class="next" style="cursor: pointer;">
-              <img src="./assets/images/desktop/icon-arrow-next.svg" alt="" style="max-width: 100%; width: fit-content;">
+            <button class="button next">
 
             </button>
           </div>
         </div>
-        <div class="grid__span__5">
+        <div class="project__images grid__span__5">
           <div class="slider__container">
             <div class="card">
               <picture>
@@ -234,11 +232,11 @@
         </div>
       </section>
     </main>
-    <footer class="d__grid grid__template__columns__1">
+    <footer class="d__grid grid__template__columns__1 flow">
       <div class="grid__span__6 padding__inline__start__10">
         <h2 class="heading-2">Let's build something great together.</h2>
       </div>
-      <div class="grid__span__7">
+      <div class="grid__span__7 padding__inline__start__10">
         <button class="button">Schedule a Call</button>
       </div>
     </footer>

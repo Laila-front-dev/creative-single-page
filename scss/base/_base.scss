@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 /* BASE */
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $ff-body;
   font-weight: $fw-body;
@@ -15,9 +19,6 @@ img {
   object-fit: cover;
   max-width: 100%;
   width: 100%;
-  // @include mq(medium) {
-  //   // display: inline !important;
-  // }
 }
 
 .padding__inline__start__10 {

@@ -1,6 +1,8 @@
 @use "../abstracts/" as *;
 
-.button {
+nav .button,
+.hero__section .button,
+footer .button {
   background-color: $color-accent-600;
   color: $color-neutral-100;
   padding: 1.438rem 2.813rem;
@@ -21,16 +23,40 @@
       background-color: hsl(0, 0, 59%);
     }
   }
-  &[data-type="secondary"] {
-    width: fit-content;
-    padding: 0.5rem 0;
-    color: $color-accent-600;
-    background-color: transparent;
-    // padding: 0;
-    border-bottom: 1px solid $color-accent-600;
-    &:hover {
-      color: hsl(0, 100, 79%);
-      border-bottom-color: hsl(0, 100, 79%);
-    }
+}
+.services__section .button[data-type="secondary"] {
+  width: fit-content;
+  padding: 0.5rem 0;
+  color: $color-accent-600;
+  background-color: transparent;
+  border-bottom: 1px solid $color-accent-600;
+  cursor: pointer;
+  &:hover {
+    color: hsl(0, 100, 79%);
+    border-bottom-color: hsl(0, 100, 79%);
+  }
+}
+
+.project__section .button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  &.next::before,
+  &.previous::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background-repeat: no-repeat;
+  }
+
+  &.previous::before {
+    background-image: url("../assets/images/desktop/icon-arrow-previous.svg");
+  }
+  &.next::before {
+    background-image: url("../assets/images/desktop/icon-arrow-next.svg");
   }
 }

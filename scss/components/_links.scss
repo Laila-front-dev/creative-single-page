@@ -11,11 +11,13 @@ nav {
   @include mq(large) {
     padding-inline-start: 2rem;
   }
-  li a {
-    color: $color-neutral-100 !important;
-    font-size: $font-size-100;
-    line-height: 32px;
-    font-weight: $fw-regular;
-    text-transform: capitalize;
+  li {
+    a {
+      color: $color-neutral-100 !important;
+      font-size: $font-size-100;
+      line-height: 32px;
+      font-weight: $fw-regular;
+      text-transform: capitalize;
+    }
   }
 }
